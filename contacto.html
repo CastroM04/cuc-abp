@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto · SonrIA Odontología</title>
+  <meta name="description" content="Agenda tu cita en SonrIA Odontología, Barranquilla. Respondemos en menos de 24 horas." />
+  <meta name="theme-color" content="#0E3A5C" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="assets/styles.css" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="brand" aria-label="SonrIA Odontología - Inicio">
+        <svg class="brand__mark" viewBox="0 0 140 160" aria-hidden="true">
+          <defs><linearGradient id="hLogo" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#00B8C4"/><stop offset="100%" stop-color="#0E3A5C"/></linearGradient></defs>
+          <g transform="translate(10,10)">
+            <path d="M70 10 C 95 10, 115 25, 115 55 C 115 80, 108 110, 95 130 C 88 140, 82 142, 75 138 C 70 135, 68 125, 65 115 C 62 125, 60 135, 55 138 C 48 142, 42 140, 35 130 C 22 110, 15 80, 15 55 C 15 25, 35 10, 70 10 Z" fill="url(#hLogo)"/>
+            <path d="M40 55 Q 65 85, 90 55" stroke="#FFF" stroke-width="6" stroke-linecap="round" fill="none"/>
+            <circle cx="92" cy="35" r="5" fill="#FF7B6B"/>
+          </g>
+        </svg>
+        <span class="brand__text">
+          <span class="brand__name">Sonr<span>IA</span></span>
+          <span class="brand__tag">ODONTOLOGÍA</span>
+        </span>
+      </a>
+
+      <nav class="nav" id="mainNav" aria-label="Navegación principal">
+        <a href="index.html">Inicio</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="contacto.html#nosotros">Nosotros</a>
+        <a href="contacto.html" class="is-active">Contacto</a>
+      </nav>
+
+      <a href="contacto.html" class="btn btn--primary btn--sm">Agendar cita →</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-controls="mainNav" aria-expanded="false"><span></span></button>
+    </div>
+  </header>
+
+  <section class="page-header">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Migas de pan">
+        <a href="index.html">Inicio</a> / <strong>Contacto</strong>
+      </nav>
+      <h1>Hablemos · <span style="color: var(--color-primary)">agenda tu cita</span></h1>
+      <p>Respondemos en menos de 24 horas hábiles. Atención inmediata por WhatsApp.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top: var(--sp-8)">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- INFO -->
+        <div class="contact-info">
+          <article class="info-card">
+            <div class="info-card__icon">📍</div>
+            <div>
+              <h3>Visítanos</h3>
+              <p>Calle 84 # 53-30, Local 102<br>Barrio El Prado, Barranquilla</p>
+            </div>
+          </article>
+
+          <article class="info-card">
+            <div class="info-card__icon">📞</div>
+            <div>
+              <h3>Llámanos</h3>
+              <p>(605) 358 2210 · PBX<br>+57 313 555 0184 · WhatsApp</p>
+            </div>
+          </article>
+
+          <article class="info-card">
+            <div class="info-card__icon">⏱</div>
+            <div>
+              <h3>Horario</h3>
+              <p>Lunes a Viernes · 8:00 am - 7:00 pm<br>Sábados · 9:00 am - 2:00 pm</p>
+            </div>
+          </article>
+
+          <div class="map" aria-label="Mapa de ubicación de SonrIA Odontología">
+            <iframe
+              src="https://www.openstreetmap.org/export/embed.html?bbox=-74.8108%2C10.9971%2C-74.8000%2C11.0040&amp;layer=mapnik&amp;marker=11.0005,-74.8054"
+              loading="lazy"
+              title="Ubicación SonrIA Odontología"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+
+        <!-- FORMULARIO -->
+        <article class="form-card" id="contactCard">
+          <span class="eyebrow">Formulario</span>
+          <h2>Envíanos un mensaje</h2>
+          <p>Cuéntanos qué necesitas y te respondemos en menos de 24 horas.</p>
+
+          <!--
+            Formulario integrado con Web3Forms (gratuito, sin token expuesto en frontend público;
+            la access_key es de uso público del servicio). Para producción se recomienda mover el
+            envío a una Cloud Function de Netlify/Vercel y guardar la access_key en variables de entorno.
+          -->
+          <form id="contactForm"
+                action="https://api.web3forms.com/submit"
+                method="POST"
+                novalidate
+                aria-describedby="formStatus">
+
+            <!-- Web3Forms access_key (sustituir por la del equipo) -->
+            <input type="hidden" name="access_key" value="REEMPLAZAR_CON_ACCESS_KEY_DE_WEB3FORMS">
+            <input type="hidden" name="subject" value="Nueva solicitud · SonrIA Odontología">
+            <input type="hidden" name="from_name" value="Sitio SonrIA Odontología">
+            <input type="hidden" name="redirect" value="false">
+
+            <!-- Honeypot anti-spam (oculto a humanos, visible a bots) -->
+            <div class="honeypot" aria-hidden="true">
+              <label for="website">No llenar este campo</label>
+              <input type="text" name="website" id="website" tabindex="-1" autocomplete="off">
+            </div>
+
+            <div class="field" data-validate="required|min:2">
+              <label for="nombre" class="field__label">Nombre completo <span class="field__required">*</span></label>
+              <input type="text" id="nombre" name="nombre" class="field__input" placeholder="María Pérez González" required minlength="2" autocomplete="name">
+              <span class="field__error">Por favor ingresa tu nombre completo.</span>
+            </div>
+
+            <div class="field" data-validate="required|email">
+              <label for="email" class="field__label">Correo electrónico <span class="field__required">*</span></label>
+              <input type="email" id="email" name="email" class="field__input" placeholder="maria@correo.com" required autocomplete="email">
+              <span class="field__error">Ingresa un correo electrónico válido.</span>
+            </div>
+
+            <div class="field" data-validate="phone">
+              <label for="telefono" class="field__label">Teléfono / WhatsApp</label>
+              <input type="tel" id="telefono" name="telefono" class="field__input" placeholder="+57 300 000 0000" autocomplete="tel" pattern="^[0-9+\\s()-]{7,18}$">
+              <span class="field__error">Número inválido (solo dígitos, espacios y +).</span>
+            </div>
+
+            <div class="field" data-validate="required">
+              <label for="motivo" class="field__label">Motivo <span class="field__required">*</span></label>
+              <select id="motivo" name="motivo" class="field__select" required>
+                <option value="">Selecciona un motivo</option>
+                <option value="valoracion">Agendar valoración inicial</option>
+                <option value="ortodoncia">Consulta sobre ortodoncia</option>
+                <option value="estetica">Diseño de sonrisa / blanqueamiento</option>
+                <option value="pediatria">Cita para niño / niña</option>
+                <option value="urgencia">Urgencia odontológica</option>
+                <option value="otro">Otro</option>
+              </select>
+              <span class="field__error">Selecciona un motivo de consulta.</span>
+            </div>
+
+            <div class="field" data-validate="required|min:10">
+              <label for="mensaje" class="field__label">Mensaje <span class="field__required">*</span></label>
+              <textarea id="mensaje" name="mensaje" class="field__textarea" placeholder="Hola, me gustaría agendar una valoración para..." required minlength="10"></textarea>
+              <span class="field__error">El mensaje debe tener al menos 10 caracteres.</span>
+            </div>
+
+            <div class="checkbox-field">
+              <input type="checkbox" id="habeas" name="habeas_data" required>
+              <label for="habeas">
+                He leído y acepto el <a href="#aviso-privacidad">aviso de tratamiento de datos personales (Ley 1581 de 2012)</a>. Mis datos serán usados únicamente para responder esta consulta.
+              </label>
+            </div>
+
+            <div class="form-meta">
+              <button type="submit" class="btn btn--primary btn--lg" id="submitBtn">
+                <span>Enviar mensaje →</span>
+              </button>
+              <span class="form-meta__hint">⏱ Respuesta en &lt; 24h</span>
+            </div>
+
+            <div id="formStatus" class="form-status" role="status" aria-live="polite"></div>
+          </form>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Aviso de privacidad -->
+  <section class="section" id="aviso-privacidad" style="padding-top:0">
+    <div class="container">
+      <div style="background:#F4FAFB; padding: var(--sp-8); border-radius: var(--r-xl); border: 1px solid var(--color-border);">
+        <span class="eyebrow">Habeas data</span>
+        <h2 class="section-title" style="font-size: var(--fs-2xl)">Aviso de tratamiento de datos personales</h2>
+        <p style="margin-top: var(--sp-4); color: var(--color-text-muted); font-size: var(--fs-sm);">
+          En cumplimiento de la <strong>Ley 1581 de 2012</strong>, la <strong>Ley 1751 de 2015</strong> y el Decreto 1377 de 2013, <strong>SonrIA Odontología SAS</strong> informa que los datos personales recolectados a través de este formulario serán tratados con el único fin de gestionar su solicitud de información o cita.
+          Los datos no serán cedidos a terceros sin autorización expresa y podrán ser actualizados, consultados o suprimidos solicitándolo al correo <a href="mailto:contacto@sonriaodontologia.co">contacto@sonriaodontologia.co</a>. Política completa disponible en sede física.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand" style="margin-bottom: 1rem;">
+            <svg class="brand__mark" viewBox="0 0 140 160" aria-hidden="true">
+              <g transform="translate(10,10)">
+                <path d="M70 10 C 95 10, 115 25, 115 55 C 115 80, 108 110, 95 130 C 88 140, 82 142, 75 138 C 70 135, 68 125, 65 115 C 62 125, 60 135, 55 138 C 48 142, 42 140, 35 130 C 22 110, 15 80, 15 55 C 15 25, 35 10, 70 10 Z" fill="#fff"/>
+                <path d="M40 55 Q 65 85, 90 55" stroke="#0E3A5C" stroke-width="6" stroke-linecap="round" fill="none"/>
+                <circle cx="92" cy="35" r="5" fill="#FF7B6B"/>
+              </g>
+            </svg>
+            <span class="brand__text">
+              <span class="brand__name">Sonr<span style="color:#00B8C4">IA</span></span>
+              <span class="brand__tag">ODONTOLOGÍA</span>
+            </span>
+          </div>
+          <p>Cuidado dental integral con tecnología digital y atención humana en Barranquilla, Colombia.</p>
+        </div>
+        <div><h4>Servicios</h4><ul><li><a href="servicios.html">Odontología general</a></li><li><a href="servicios.html">Ortodoncia</a></li><li><a href="servicios.html">Estética dental</a></li><li><a href="servicios.html">Odontopediatría</a></li></ul></div>
+        <div><h4>Contacto</h4><ul><li>Calle 84 # 53-30</li><li>Barranquilla, Atlántico</li><li>(605) 358 2210</li><li>contacto@sonriaodontologia.co</li></ul></div>
+        <div><h4>Legal</h4><ul><li><a href="#aviso-privacidad">Aviso de privacidad</a></li><li><a href="#aviso-privacidad">Tratamiento de datos (Ley 1581)</a></li><li><a href="#">Habeas data (Ley 1751)</a></li><li><a href="#">Habilitación 2210-2024</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© 2026 SonrIA Odontología · Habilitada Secretaría de Salud del Atlántico</div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/573135550184" class="fab-whatsapp" aria-label="Escribir por WhatsApp">💬</a>
+
+  <script src="assets/script.js" defer></script>
+</body>
+</html>

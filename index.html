@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SonrIA Odontología · Sonrisas que cuidan de ti en Barranquilla</title>
+  <meta name="description" content="Clínica odontológica integral en Barranquilla. Tecnología digital, especialistas certificados, atención humana. Agenda tu cita en línea." />
+  <meta name="theme-color" content="#0E3A5C" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="assets/styles.css" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="brand" aria-label="SonrIA Odontología - Inicio">
+        <svg class="brand__mark" viewBox="0 0 140 160" aria-hidden="true">
+          <defs>
+            <linearGradient id="hLogo" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#00B8C4"/><stop offset="100%" stop-color="#0E3A5C"/>
+            </linearGradient>
+          </defs>
+          <g transform="translate(10,10)">
+            <path d="M70 10 C 95 10, 115 25, 115 55 C 115 80, 108 110, 95 130 C 88 140, 82 142, 75 138 C 70 135, 68 125, 65 115 C 62 125, 60 135, 55 138 C 48 142, 42 140, 35 130 C 22 110, 15 80, 15 55 C 15 25, 35 10, 70 10 Z" fill="url(#hLogo)"/>
+            <path d="M40 55 Q 65 85, 90 55" stroke="#FFF" stroke-width="6" stroke-linecap="round" fill="none"/>
+            <circle cx="92" cy="35" r="5" fill="#FF7B6B"/>
+          </g>
+        </svg>
+        <span class="brand__text">
+          <span class="brand__name">Sonr<span>IA</span></span>
+          <span class="brand__tag">ODONTOLOGÍA</span>
+        </span>
+      </a>
+
+      <nav class="nav" id="mainNav" aria-label="Navegación principal">
+        <a href="index.html" class="is-active">Inicio</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="contacto.html#nosotros">Nosotros</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+
+      <a href="contacto.html" class="btn btn--primary btn--sm">Agendar cita →</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-controls="mainNav" aria-expanded="false">
+        <span class="sr-only"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero__grid">
+      <div>
+        <span class="eyebrow">● Odontología en Barranquilla</span>
+        <h1 class="hero__title">Sonrisas que cuidan de ti, <span>con tecnología</span> y calidez humana.</h1>
+        <p class="hero__lead">Tratamientos integrales con tecnología digital 3D, especialistas certificados y atención personalizada para toda la familia. Reserva tu cita en línea.</p>
+        <div class="hero__cta">
+          <a href="contacto.html" class="btn btn--primary btn--lg">Agendar mi cita →</a>
+          <a href="servicios.html" class="btn btn--secondary btn--lg">Ver servicios</a>
+        </div>
+        <div class="hero__stats">
+          <div class="hero__stat"><strong>+1.200</strong><span>pacientes felices</span></div>
+          <div class="hero__stat"><strong>8</strong><span>especialistas</span></div>
+          <div class="hero__stat"><strong>4.9★</strong><span>Google Reviews</span></div>
+        </div>
+      </div>
+      <div class="hero__visual" aria-hidden="true">
+        <svg class="hero__face" viewBox="0 0 200 200">
+          <circle cx="100" cy="100" r="80" fill="rgba(255,255,255,0.18)"/>
+          <path d="M55 110 Q 100 170, 145 110" stroke="#fff" stroke-width="10" stroke-linecap="round" fill="none"/>
+          <circle cx="75" cy="85" r="8" fill="#fff"/>
+          <circle cx="125" cy="85" r="8" fill="#fff"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST BAR -->
+  <div class="container">
+    <div class="trust-bar">
+      <span>★ Habilitada Secretaría de Salud</span>
+      <span>⏱ Citas el mismo día</span>
+      <span>💳 EPS y prepago</span>
+      <span>🛡 Esterilización certificada</span>
+      <span>🚗 Parqueadero</span>
+    </div>
+  </div>
+
+  <!-- SERVICIOS -->
+  <section class="section" id="servicios">
+    <div class="container">
+      <span class="eyebrow">Servicios</span>
+      <h2 class="section-title">Todo lo que tu sonrisa necesita</h2>
+      <p class="section-lead">Tratamientos integrales con tecnología 3D y especialistas en cada área.</p>
+
+      <div class="cards">
+        <article class="card">
+          <div class="card__media">
+            <svg viewBox="0 0 60 80"><path d="M30 5 C 45 5, 55 15, 55 30 C 55 45, 50 60, 45 70 C 42 75, 39 76, 36 73 C 33 70, 32 65, 30 60 C 28 65, 27 70, 24 73 C 21 76, 18 75, 15 70 C 10 60, 5 45, 5 30 C 5 15, 15 5, 30 5 Z" fill="#00B8C4"/><path d="M16 30 Q 30 45, 44 30" stroke="#fff" stroke-width="3" stroke-linecap="round" fill="none"/></svg>
+          </div>
+          <div class="card__body">
+            <span class="card__tag">Preventiva</span>
+            <h3 class="card__title">Odontología general</h3>
+            <p class="card__desc">Limpieza, profilaxis, restauración y diagnóstico digital.</p>
+            <div class="card__footer">
+              <span class="card__price">Desde $80.000<small>30 min</small></span>
+              <a href="contacto.html" class="btn btn--ghost btn--sm">Agendar →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__media">
+            <svg viewBox="0 0 80 80"><rect x="10" y="30" width="60" height="30" rx="6" fill="#00B8C4"/><rect x="15" y="30" width="10" height="30" fill="#fff" opacity="0.4"/><rect x="30" y="30" width="10" height="30" fill="#fff" opacity="0.4"/><rect x="45" y="30" width="10" height="30" fill="#fff" opacity="0.4"/><rect x="60" y="30" width="10" height="30" fill="#fff" opacity="0.4"/><circle cx="40" cy="65" r="6" fill="#FF7B6B"/></svg>
+          </div>
+          <div class="card__body">
+            <span class="card__tag">Ortodoncia</span>
+            <h3 class="card__title">Brackets y alineadores</h3>
+            <p class="card__desc">Brackets estéticos, alineadores transparentes y control digital.</p>
+            <div class="card__footer">
+              <span class="card__price">Desde $1.800.000<small>12-24 meses</small></span>
+              <a href="contacto.html" class="btn btn--ghost btn--sm">Agendar →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__media">
+            <svg viewBox="0 0 80 80"><path d="M15 60 Q 40 10, 65 60 Z" fill="#00B8C4"/><path d="M25 60 Q 40 35, 55 60 Z" fill="#fff" opacity="0.6"/><circle cx="62" cy="25" r="6" fill="#FF7B6B"/><circle cx="62" cy="25" r="2" fill="#fff"/></svg>
+          </div>
+          <div class="card__body">
+            <span class="card__tag card__tag--coral">Estética</span>
+            <h3 class="card__title">Diseño de sonrisa</h3>
+            <p class="card__desc">Carillas, blanqueamiento y estética dental personalizada.</p>
+            <div class="card__footer">
+              <span class="card__price">Desde $450.000<small>45 min</small></span>
+              <a href="contacto.html" class="btn btn--ghost btn--sm">Agendar →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card card--dark">
+          <div class="card__body">
+            <span class="card__tag">Destacado</span>
+            <h3 class="card__title">Odontopediatría</h3>
+            <p class="card__desc">Atención especializada para niños desde los 2 años, con enfoque lúdico y sala infantil.</p>
+            <div class="card__footer">
+              <span class="card__price">Desde $90.000<small>30 min · Sala infantil</small></span>
+              <a href="contacto.html" class="btn btn--accent btn--sm">Agendar →</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- POR QUÉ NOSOTROS -->
+  <section class="section" id="por-que">
+    <div class="container">
+      <span class="eyebrow eyebrow--coral">Diferencial</span>
+      <h2 class="section-title">¿Por qué elegir SonrIA?</h2>
+
+      <div class="features">
+        <div class="feature">
+          <div class="feature__icon feature__icon--primary">⚡</div>
+          <h3>Tecnología digital</h3>
+          <p>Radiografía panorámica 3D y escáner intraoral. Diagnósticos precisos y tratamientos guiados con simulación previa.</p>
+        </div>
+        <div class="feature">
+          <div class="feature__icon feature__icon--secondary">♥</div>
+          <h3>Atención humana</h3>
+          <p>Sin dolor, sin miedo, con explicaciones claras. Cada paciente recibe un plan de tratamiento detallado y a su ritmo.</p>
+        </div>
+        <div class="feature">
+          <div class="feature__icon feature__icon--accent">$</div>
+          <h3>Financiación</h3>
+          <p>Aceptamos EPS, planes prepago y financiación a 12 meses. Sin sobrecostos ni intereses ocultos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIOS -->
+  <section class="section testimonials-section">
+    <div class="container">
+      <span class="eyebrow">Pacientes</span>
+      <h2 class="section-title">Historias que nos enorgullecen</h2>
+
+      <div class="testimonials">
+        <article class="testimonial">
+          <div class="testimonial__stars" aria-label="5 estrellas">★★★★★</div>
+          <p class="testimonial__quote">"La doctora Camila me explicó cada paso del tratamiento. Mis brackets cambiaron mi sonrisa y mi confianza."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar">MJ</div>
+            <div>
+              <div class="testimonial__name">María José</div>
+              <div class="testimonial__role">Ortodoncia · 2025</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="testimonial">
+          <div class="testimonial__stars" aria-label="5 estrellas">★★★★★</div>
+          <p class="testimonial__quote">"Llevo a mis tres hijos. La sala infantil y la paciencia del equipo hacen que ya no lloren cuando vamos al dentista."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar" style="background:#00B8C4">LR</div>
+            <div>
+              <div class="testimonial__name">Laura Reyes</div>
+              <div class="testimonial__role">Odontopediatría · 2025</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="testimonial">
+          <div class="testimonial__stars" aria-label="5 estrellas">★★★★★</div>
+          <p class="testimonial__quote">"Diseño de sonrisa impecable. La tecnología 3D me mostró el resultado antes de empezar. Súper recomendado."</p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar" style="background:#FF7B6B">AC</div>
+            <div>
+              <div class="testimonial__name">Andrés Castro</div>
+              <div class="testimonial__role">Estética dental · 2025</div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="cta-banner">
+        <div>
+          <h2>¿Listo para tu nueva sonrisa?</h2>
+          <p>Agenda tu primera valoración. Te respondemos en menos de 24 horas.</p>
+        </div>
+        <div class="cta-banner__actions">
+          <a href="contacto.html" class="btn btn--primary btn--lg">Agendar mi cita →</a>
+          <a href="https://wa.me/573135550184" class="btn btn--secondary btn--lg">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand" style="margin-bottom: 1rem;">
+            <svg class="brand__mark" viewBox="0 0 140 160" aria-hidden="true">
+              <g transform="translate(10,10)">
+                <path d="M70 10 C 95 10, 115 25, 115 55 C 115 80, 108 110, 95 130 C 88 140, 82 142, 75 138 C 70 135, 68 125, 65 115 C 62 125, 60 135, 55 138 C 48 142, 42 140, 35 130 C 22 110, 15 80, 15 55 C 15 25, 35 10, 70 10 Z" fill="#fff"/>
+                <path d="M40 55 Q 65 85, 90 55" stroke="#0E3A5C" stroke-width="6" stroke-linecap="round" fill="none"/>
+                <circle cx="92" cy="35" r="5" fill="#FF7B6B"/>
+              </g>
+            </svg>
+            <span class="brand__text">
+              <span class="brand__name">Sonr<span style="color:#00B8C4">IA</span></span>
+              <span class="brand__tag">ODONTOLOGÍA</span>
+            </span>
+          </div>
+          <p>Cuidado dental integral con tecnología digital y atención humana en Barranquilla, Colombia.</p>
+        </div>
+
+        <div>
+          <h4>Servicios</h4>
+          <ul>
+            <li><a href="servicios.html">Odontología general</a></li>
+            <li><a href="servicios.html">Ortodoncia</a></li>
+            <li><a href="servicios.html">Estética dental</a></li>
+            <li><a href="servicios.html">Odontopediatría</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Contacto</h4>
+          <ul>
+            <li>Calle 84 # 53-30</li>
+            <li>Barranquilla, Atlántico</li>
+            <li>(605) 358 2210</li>
+            <li>contacto@sonriaodontologia.co</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Aviso de privacidad</a></li>
+            <li><a href="#">Tratamiento de datos (Ley 1581)</a></li>
+            <li><a href="#">Habeas data (Ley 1751)</a></li>
+            <li><a href="#">Habilitación 2210-2024</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        © 2026 SonrIA Odontología · Habilitada Secretaría de Salud del Atlántico · Hecho con cuidado por SonrIA Consulting
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/573135550184" class="fab-whatsapp" aria-label="Escribir por WhatsApp">💬</a>
+
+  <script src="assets/script.js" defer></script>
+</body>
+</html>

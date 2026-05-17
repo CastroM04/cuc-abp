@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Servicios · SonrIA Odontología</title>
+  <meta name="description" content="Servicios odontológicos integrales en Barranquilla: odontología general, ortodoncia, diseño de sonrisa, implantes y odontopediatría." />
+  <meta name="theme-color" content="#0E3A5C" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="assets/styles.css" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="brand" aria-label="SonrIA Odontología - Inicio">
+        <svg class="brand__mark" viewBox="0 0 140 160" aria-hidden="true">
+          <defs><linearGradient id="hLogo" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#00B8C4"/><stop offset="100%" stop-color="#0E3A5C"/></linearGradient></defs>
+          <g transform="translate(10,10)">
+            <path d="M70 10 C 95 10, 115 25, 115 55 C 115 80, 108 110, 95 130 C 88 140, 82 142, 75 138 C 70 135, 68 125, 65 115 C 62 125, 60 135, 55 138 C 48 142, 42 140, 35 130 C 22 110, 15 80, 15 55 C 15 25, 35 10, 70 10 Z" fill="url(#hLogo)"/>
+            <path d="M40 55 Q 65 85, 90 55" stroke="#FFF" stroke-width="6" stroke-linecap="round" fill="none"/>
+            <circle cx="92" cy="35" r="5" fill="#FF7B6B"/>
+          </g>
+        </svg>
+        <span class="brand__text">
+          <span class="brand__name">Sonr<span>IA</span></span>
+          <span class="brand__tag">ODONTOLOGÍA</span>
+        </span>
+      </a>
+
+      <nav class="nav" id="mainNav" aria-label="Navegación principal">
+        <a href="index.html">Inicio</a>
+        <a href="servicios.html" class="is-active">Servicios</a>
+        <a href="contacto.html#nosotros">Nosotros</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+
+      <a href="contacto.html" class="btn btn--primary btn--sm">Agendar cita →</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-controls="mainNav" aria-expanded="false"><span></span></button>
+    </div>
+  </header>
+
+  <section class="page-header">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Migas de pan">
+        <a href="index.html">Inicio</a> / <strong>Servicios</strong>
+      </nav>
+      <h1>Nuestros servicios odontológicos</h1>
+      <p>Tratamientos integrales con tecnología digital y especialistas certificados. Selecciona la categoría que te interese o agenda una valoración gratuita.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top: var(--sp-8)">
+    <div class="container">
+
+      <div class="filters" role="tablist" aria-label="Filtrar servicios">
+        <button class="filter is-active" data-filter="todos">Todos</button>
+        <button class="filter" data-filter="preventiva">Preventiva</button>
+        <button class="filter" data-filter="estetica">Estética</button>
+        <button class="filter" data-filter="ortodoncia">Ortodoncia</button>
+        <button class="filter" data-filter="cirugia">Cirugía</button>
+        <button class="filter" data-filter="pediatria">Pediatría</button>
+      </div>
+
+      <div class="cards" id="serviciosGrid">
+        <article class="card" data-cat="preventiva">
+          <div class="card__media"><svg viewBox="0 0 60 80"><path d="M30 5 C 45 5, 55 15, 55 30 C 55 45, 50 60, 45 70 C 42 75, 39 76, 36 73 C 33 70, 32 65, 30 60 C 28 65, 27 70, 24 73 C 21 76, 18 75, 15 70 C 10 60, 5 45, 5 30 C 5 15, 15 5, 30 5 Z" fill="#00B8C4"/><path d="M16 30 Q 30 45, 44 30" stroke="#fff" stroke-width="3" stroke-linecap="round" fill="none"/></svg></div>
+          <div class="card__body">
+            <span class="card__tag">Preventiva</span>
+            <h3 class="card__title">Odontología general</h3>
+            <p class="card__desc">Limpieza, profilaxis, restauraciones y diagnóstico digital completo.</p>
+            <div class="card__footer">
+              <span class="card__price">Desde $80.000<small>30 min</small></span>
+              <a href="contacto.html" class="btn btn--ghost btn--sm">Agendar →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" data-cat="ortodoncia">
+          <div class="card__media"><svg viewBox="0 0 80 80"><rect x="10" y="30" width="60" height="30" rx="6" fill="#00B8C4"/><rect x="15" y="30" width="10" height="30" fill="#fff" opacity="0.4"/><rect x="30" y="30" width="10" height="30" fill="#fff" opacity="0.4"/><rect x="45" y="30" width="10" height="30" fill="#fff" opacity="0.4"/><rect x="60" y="30" width="10" height="30" fill="#fff" opacity="0.4"/><circle cx="40" cy="65" r="6" fill="#FF7B6B"/></svg></div>
+          <div class="card__body">
+            <span class="card__tag">Ortodoncia</span>
+            <h3 class="card__title">Brackets y alineadores</h3>
+            <p class="card__desc">Tradicionales, estéticos o alineadores transparentes con control digital.</p>
+            <div class="card__footer">
+              <span class="card__price">Desde $1.800.000<small>12-24 meses</small></span>
+              <a href="contacto.html" class="btn btn--ghost btn--sm">Agendar →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" data-cat="estetica">
+          <div class="card__media"><svg viewBox="0 0 80 80"><path d="M15 60 Q 40 10, 65 60 Z" fill="#00B8C4"/><path d="M25 60 Q 40 35, 55 60 Z" fill="#fff" opacity="0.6"/><circle cx="62" cy="25" r="6" fill="#FF7B6B"/><circle cx="62" cy="25" r="2" fill="#fff"/></svg></div>
+          <div class="card__body">
+            <span class="card__tag card__tag--coral">Estética</span>
+            <h3 class="card__title">Diseño de sonrisa</h3>
+            <p class="card__desc">Carillas, blanqueamiento y simulación digital previa al tratamiento.</p>
+            <div class="card__footer">
+              <span class="card__price">Desde $450.000<small>45 min</small></span>
+              <a href="contacto.html" class="btn btn--ghost btn--sm">Agendar →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" data-cat="cirugia">
+          <div class="card__media"><svg viewBox="0 0 80 80"><circle cx="40" cy="40" r="28" fill="#00B8C4"/><text x="40" y="50" text-anchor="middle" font-size="28" fill="#fff" font-weight="700">★</text></svg></div>
+          <div class="card__body">
+            <span class="card__tag">Implantes</span>
+            <h3 class="card__title">Implantes dentales</h3>
+            <p class="card__desc">Implantes de titanio guiados con planeación digital 3D.</p>
+            <div class="card__footer">
+              <span class="card__price">Desde $2.500.000<small>Plan 3 meses</small></span>
+              <a href="contacto.html" class="btn btn--ghost btn--sm">Agendar →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card card--dark" data-cat="pediatria">
+          <div class="card__body">
+            <span class="card__tag">Pediatría</span>
+            <h3 class="card__title">Odontopediatría</h3>
+            <p class="card__desc">Atención especializada para niños desde los 2 años con sala infantil dedicada.</p>
+            <div class="card__footer">
+              <span class="card__price">Desde $90.000<small>30 min</small></span>
+              <a href="contacto.html" class="btn btn--accent btn--sm">Agendar →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" data-cat="preventiva">
+          <div class="card__media"><svg viewBox="0 0 80 80"><circle cx="40" cy="40" r="25" fill="#00B8C4"/><path d="M25 40 L 35 50 L 55 30" stroke="#fff" stroke-width="4" stroke-linecap="round" fill="none"/></svg></div>
+          <div class="card__body">
+            <span class="card__tag">Endodoncia</span>
+            <h3 class="card__title">Tratamiento de conducto</h3>
+            <p class="card__desc">Microscopio dental y anestesia computarizada sin molestias.</p>
+            <div class="card__footer">
+              <span class="card__price">Desde $380.000<small>60 min</small></span>
+              <a href="contacto.html" class="btn btn--ghost btn--sm">Agendar →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" data-cat="cirugia">
+          <div class="card__media"><svg viewBox="0 0 80 80"><circle cx="40" cy="40" r="22" fill="#0E3A5C"/><path d="M30 35 L 35 30 L 50 45 L 45 50 Z" fill="#FFF"/><path d="M48 32 L 55 25" stroke="#FF7B6B" stroke-width="4" stroke-linecap="round"/></svg></div>
+          <div class="card__body">
+            <span class="card__tag">Cirugía</span>
+            <h3 class="card__title">Extracciones y cordales</h3>
+            <p class="card__desc">Cirugía oral menor y de terceros molares con protocolos seguros.</p>
+            <div class="card__footer">
+              <span class="card__price">Desde $250.000<small>45 min</small></span>
+              <a href="contacto.html" class="btn btn--ghost btn--sm">Agendar →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" data-cat="preventiva">
+          <div class="card__media"><svg viewBox="0 0 80 80"><circle cx="40" cy="40" r="22" fill="#00B8C4"/><path d="M28 35 Q 40 28, 52 35" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round"/><path d="M28 45 Q 40 52, 52 45" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round"/></svg></div>
+          <div class="card__body">
+            <span class="card__tag">Periodoncia</span>
+            <h3 class="card__title">Salud de encías</h3>
+            <p class="card__desc">Tratamiento de gingivitis, periodontitis y mantenimiento.</p>
+            <div class="card__footer">
+              <span class="card__price">Desde $180.000<small>40 min</small></span>
+              <a href="contacto.html" class="btn btn--ghost btn--sm">Agendar →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" data-cat="estetica">
+          <div class="card__media"><svg viewBox="0 0 80 80"><circle cx="40" cy="40" r="22" fill="#FF7B6B"/><circle cx="35" cy="35" r="4" fill="#fff"/><circle cx="45" cy="42" r="3" fill="#fff"/><circle cx="38" cy="48" r="2" fill="#fff"/></svg></div>
+          <div class="card__body">
+            <span class="card__tag card__tag--coral">Estética</span>
+            <h3 class="card__title">Blanqueamiento dental</h3>
+            <p class="card__desc">Blanqueamiento en consultorio con luz LED de última generación.</p>
+            <div class="card__footer">
+              <span class="card__price">Desde $320.000<small>60 min</small></span>
+              <a href="contacto.html" class="btn btn--ghost btn--sm">Agendar →</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- FAQ -->
+      <div style="margin-top: var(--sp-24)">
+        <span class="eyebrow">FAQ</span>
+        <h2 class="section-title">Preguntas frecuentes</h2>
+
+        <div class="faq">
+          <details class="faq__item">
+            <summary>¿Aceptan EPS y planes de medicina prepagada?</summary>
+            <div class="faq__body">Sí. Trabajamos con las principales EPS del Atlántico (Coomeva, Sura, Sanitas) y planes prepago. Verifica tu cobertura al agendar.</div>
+          </details>
+          <details class="faq__item">
+            <summary>¿Cómo agendo una cita de urgencia?</summary>
+            <div class="faq__body">Llámanos al (605) 358 2210 o escríbenos por WhatsApp al +57 313 555 0184. Reservamos cupos diarios para urgencias.</div>
+          </details>
+          <details class="faq__item">
+            <summary>¿Atienden niños menores de 5 años?</summary>
+            <div class="faq__body">Sí. Nuestra odontopediatra está especializada en atención desde los 2 años, con técnicas de desensibilización y sala infantil temática.</div>
+          </details>
+          <details class="faq__item">
+            <summary>¿Ofrecen financiación para ortodoncia?</summary>
+            <div class="faq__body">Sí. Planes hasta 12 meses sin intereses con tarjeta de crédito o crédito directo previo estudio. La cuota inicial es del 30%.</div>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand" style="margin-bottom: 1rem;">
+            <svg class="brand__mark" viewBox="0 0 140 160" aria-hidden="true">
+              <g transform="translate(10,10)">
+                <path d="M70 10 C 95 10, 115 25, 115 55 C 115 80, 108 110, 95 130 C 88 140, 82 142, 75 138 C 70 135, 68 125, 65 115 C 62 125, 60 135, 55 138 C 48 142, 42 140, 35 130 C 22 110, 15 80, 15 55 C 15 25, 35 10, 70 10 Z" fill="#fff"/>
+                <path d="M40 55 Q 65 85, 90 55" stroke="#0E3A5C" stroke-width="6" stroke-linecap="round" fill="none"/>
+                <circle cx="92" cy="35" r="5" fill="#FF7B6B"/>
+              </g>
+            </svg>
+            <span class="brand__text">
+              <span class="brand__name">Sonr<span style="color:#00B8C4">IA</span></span>
+              <span class="brand__tag">ODONTOLOGÍA</span>
+            </span>
+          </div>
+          <p>Cuidado dental integral con tecnología digital y atención humana en Barranquilla, Colombia.</p>
+        </div>
+        <div><h4>Servicios</h4><ul><li><a href="servicios.html">Odontología general</a></li><li><a href="servicios.html">Ortodoncia</a></li><li><a href="servicios.html">Estética dental</a></li><li><a href="servicios.html">Odontopediatría</a></li></ul></div>
+        <div><h4>Contacto</h4><ul><li>Calle 84 # 53-30</li><li>Barranquilla, Atlántico</li><li>(605) 358 2210</li><li>contacto@sonriaodontologia.co</li></ul></div>
+        <div><h4>Legal</h4><ul><li><a href="#">Aviso de privacidad</a></li><li><a href="#">Tratamiento de datos (Ley 1581)</a></li><li><a href="#">Habeas data (Ley 1751)</a></li><li><a href="#">Habilitación 2210-2024</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">© 2026 SonrIA Odontología · Habilitada Secretaría de Salud del Atlántico</div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/573135550184" class="fab-whatsapp" aria-label="Escribir por WhatsApp">💬</a>
+
+  <script src="assets/script.js" defer></script>
+</body>
+</html>
